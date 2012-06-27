@@ -8,7 +8,7 @@ Ungzip/untar the tarball...
 
 It will extract into a 'couchbase' directory.
 
-Run the "reloc.sh INSTALL_DIR" script.  The INSTALL_DIR is where the
+Run the "reloc.sh INSTALL_DIR" script.  The INSTALL_DIR is the
 absolute path of the 'couchbase' directory.  For example, after the
 previous step...
 
