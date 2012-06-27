@@ -21,7 +21,7 @@ previous step...
     ...
     $
 
-## Starting the server...
+## Starting the couchbase-server...
 
     $ ./bin/couchbase-server
     The maximum number of open files for the couchbase user is set too low.
@@ -44,11 +44,20 @@ previous step...
                            {restart_type,permanent},
                            {shutdown,2000},
                            {child_type,worker}]
+    ...
 
 ## Configuring the server...
 
 Point your web-browser to http://HOST:8091 and follow the initial
 configuration screens.
+
+# Tips/recommendations...
+
+Please to update your firewall configuration to allow connections to
+the following ports: 11211, 11210, 11209, 4369, 8091 and from 21100 to
+21299.
+
+Change your ulimits to allow more file descriptors.
 
 # Questions / support
 
