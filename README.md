@@ -51,6 +51,16 @@ previous step...
 Point your web-browser to http://HOST:8091 and follow the initial
 configuration screens.
 
+# Running the server dettached/background...
+
+If you want to run the server without stdin, dettached from the terminal (so, similar to running it as a service), use...
+
+    ./bin/couchbase-server -- -noinput -detacched
+
+Then to stop the running, background couchbase-server, use...
+
+    ./bin/couchbase-server -k
+
 # Tips/recommendations...
 
 Please to update your firewall configuration to allow connections to
