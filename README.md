@@ -55,9 +55,19 @@ configuration screens.
 
 Please to update your firewall configuration to allow connections to
 the following ports: 11211, 11210, 11209, 4369, 8091 and from 21100 to
-21299.
+21299.  (You may need root to do this.)
 
 Change your ulimits to allow more file descriptors.
+
+You may want to mount production filesystems (also need root to do
+this).
+
+Consider enabling core dumps via ./bin/cbenable_core_dumps.sh (need
+root to do this).
+
+# To build the relocatable tarball...
+
+See the Makefile and the 'make reloc' target.
 
 # Questions / support
 
