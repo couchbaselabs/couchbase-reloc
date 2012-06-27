@@ -51,15 +51,19 @@ previous step...
 Point your web-browser to http://HOST:8091 and follow the initial
 configuration screens.
 
-# Running the server dettached/background...
+# Running the server detached/background...
 
-If you want to run the server without stdin, dettached from the terminal (so, similar to running it as a service), use...
+If you want to run the server without stdin, detached from the terminal (so, similar to running it as a service), use...
 
-    ./bin/couchbase-server -- -noinput -detacched
+    ./bin/couchbase-server -- -noinput -detached
 
 Then to stop the running, background couchbase-server, use...
 
     ./bin/couchbase-server -k
+
+You can use the above start & stop commands with your process
+monitoring tools, like monit, god, upstart, launchd (or, your own
+favorite).
 
 # Tips/recommendations...
 
@@ -69,8 +73,8 @@ the following ports: 11211, 11210, 11209, 4369, 8091 and from 21100 to
 
 Change your ulimits to allow more file descriptors.
 
-You may want to mount production filesystems (also need root to do
-this).
+You may want to mount and use dedicated filesystems (also need root to
+do this).
 
 Consider enabling core dumps via ./bin/cbenable_core_dumps.sh (need
 root to do this).
